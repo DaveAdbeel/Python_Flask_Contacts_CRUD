@@ -1,0 +1,55 @@
+{% extends 'layout.html' %} {% block title %}Update Contact{% endblock title %}
+{% block body %}
+
+
+<form action="/update/{{contact.id}}" method="POST">
+   <legend>Personal Data</legend>
+   <div class="row mb-3">
+      <label for="fullname" class="col-sm-2 col-form-label">Fullname: </label>
+      <div class="col-sm-10">
+         <input
+            required
+            type="text"
+            name="fullname"
+            placeholder="Write your new Fullname"
+            value="{{contact.fullname}}"
+            class="form-control"
+            id="fullname"
+         />
+      </div>
+   </div>
+
+   <div class="row mb-3">
+      <label for="email" class="col-sm-2 col-form-label">Email: </label>
+      <div class="col-sm-10">
+         <input
+            required
+            type="email"
+            name="email"
+            placeholder="Write your new email"
+            value="{{contact.email}}"
+            class="form-control"
+            id="email"
+         />
+      </div>
+   </div>
+
+   <div class="row mb-3">
+      <label for="phone" class="col-sm-2 col-form-label">Phone: </label>
+      <div class="col-sm-10">
+         <input
+            class="form-control"
+            id="phone"
+            required
+            type="tel"
+            max-length="50"
+            name="phone"
+            placeholder="Write your new phone"
+            value="{{contact.phone}}"
+         />
+      </div>
+   </div>
+
+   <button type="submit" class="btn btn-primary">Edit Contact</button>
+</form>
+{% endblock body %}

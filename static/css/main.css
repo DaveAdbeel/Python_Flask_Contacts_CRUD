@@ -1,0 +1,11 @@
+body {
+    color: #d3d3d3;
+   background-color: rgb(26, 28, 31);
+}
+.table-db {
+   box-shadow: rgb(21, 148, 217) 3px 3px 0px 0px, rgb(59, 59, 116) 6px 6px 0 0;
+}
+
+.form-contact {
+   box-shadow: rgb(12, 228, 62) -4.5px 4.5px 0px 0px;
+}
