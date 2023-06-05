@@ -46,7 +46,7 @@ Make sure you have the following installed on your system:
 - Create the virtual environment by running the following command:
 
    ```
-   python -m venv venv
+   python3 -m venv venv
    ```
 
   .This will create a new directory called "venv" which will contain all the files needed for your virtual environment.
