@@ -1,9 +1,12 @@
 
-```
 # Python Flask Contacts CRUD
 
 This is a CRUD (Create, Read, Update, Delete) application built with Python Flask framework. 
 It allows you to store contacts in a database and perform basic operations like viewing, editing, and deleting contacts.
+
+
+![image](https://github.com/DaveAdbeel/Python_Flask_Contacts_CRUD/assets/91069463/f6d0e01d-a13b-4b5f-9e9c-a40656200ed9)
+
 
 ## Features
 
@@ -32,8 +35,37 @@ Make sure you have the following installed on your system:
    cd Python_Flask_Contacts_CRUD
    ```
 
-3. Install the required dependencies:
+3. Initialize the virtual enviroment and install the required dependencies:
 
+- First of all install the virtualenv tool if you don't already have it. You can install the following command in your terminal:
+
+   ```
+   pip install virtualenv
+   ```
+
+- Create the virtual environment by running the following command:
+
+   ```
+   python -m venv venv
+   ```
+
+  .This will create a new directory called "venv" which will contain all the files needed for your virtual environment.
+
+- Activate the virtual environment. On Windows, run:
+
+   ```
+   venv\Scripts\activate
+   ```
+
+- On macOS or Linux, run:
+
+   ```
+   source venv/bin/activate
+   ```
+
+   .When the virtual environment is enabled, you will see the directory name in parentheses in your terminal, 
+   indicating that you are working within the virtual environment, after that run this command.
+   
    ```shell
    pip install -r requirements.txt
    ```
